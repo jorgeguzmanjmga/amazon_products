@@ -1,0 +1,30 @@
+[project]
+name = "amazon-products"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jorge Guzmán", email = "jorgeguzmanjmga@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "mcp>=2,<3",
+    "numpy>=2.5.4",
+    "sentence-transformers>=6.1.0",
+    "torch>=2.14.1",
+]
+
+[project.scripts]
+amazon-products = "amazon_products:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "mypy>=2.4.0",
+    "pandas>=3.0.6",
+]

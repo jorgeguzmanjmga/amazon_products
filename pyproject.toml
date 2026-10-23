@@ -1,7 +1,7 @@
 [project]
 name = "amazon-products"
 version = "0.1.0"
-description = "Add your description here"
+description = "Servidor MCP por HTTP para buscar y analizar productos de Amazon Reviews 2023 Electronics con embeddings"
 readme = "README.md"
 authors = [
     { name = "Jorge Guzmán", email = "jorgeguzmanjmga@gmail.com" }
@@ -13,13 +13,6 @@ dependencies = [
     "sentence-transformers>=6.1.0",
     "torch>=2.14.1",
 ]
-
-[project.scripts]
-amazon-products = "amazon_products:main"
-
-[build-system]
-requires = ["uv_build>=0.12.23,<0.13.0"]
-build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
